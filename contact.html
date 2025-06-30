@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style-about-me.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="pic/Logo.png" />
+    <meta name="author" content="Martin Bachmeier" />
+    <meta name="description" content="Martin Bachmeier" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="pic/Logo.png" alt="Logo" />
+        <span>Martin Bachmeier</span>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav id="nav-links">
+        <a href="home.html" onclick="closeMenu()">HOME</a>
+        <a href="about-me.html" onclick="closeMenu(); return true;">ABOUT ME</a>
+        <a href="projekte.html" onclick="closeMenu()">PROJEKTE</a>
+        <div class="close" onclick="closeMenu()">&times;</div>
+      </nav>
+    </header>
+
+    <main>
+      <section></section>
+      <section>
+        <p>
+          Ich bin keine Freelacer, ich bin nicht Selbstständig und habe kein Gewerbe. Ich nehme auch
+          keine Aufträge an! Ich speichere auch auf dieser Seite nichts, weswegen ich auch keine
+          Cookies eingebaut habe. Es soll rein nur als Portfolio für Bewerbungen dienen, die ich
+          verschickt habe.
+          <br />
+          Diese Webseite wird nur für Bewerbungen genutzt, um nicht alles drucken zu müssen.
+          <br />
+          Alle Daten von mir stehen auf dem Anschreiben und dem Lebenslauf.
+        </p>
+        <a href="#datenschutz">DATENSCHUTZ</a>
+      </section>
+    </main>
+
+    <footer class="social-footer">
+      <a href="https://www.instagram.com/da_bachei/">INSTAGRAM</a>
+      <a href="https://www.facebook.com/martin.bachmeier/">FACEBOOK</a>
+      <a href="https://www.youtube.com/@martinbachmeier1943">YOUTUBE</a>
+      <a href="https://www.linkedin.com/in/martin-bachmeier-5ba153165/">LINKEDIN</a>
+      <a href="https://www.behance.net/martinbachmeier">BEHANCE</a>
+      <a href="https://www.twitch.tv/da_bachei">TWITCH</a>
+    </footer>
+
+    <!-- JS für Menü -->
+    <script>
+      function toggleMenu() {
+        document.getElementById('nav-links').classList.toggle('active');
+      }
+      function closeMenu() {
+        document.getElementById('nav-links').classList.remove('active');
+      }
+    </script>
+  </body>
+</html>

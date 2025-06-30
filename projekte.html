@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Projekte</title>
+    <link rel="stylesheet" href="style-projekte.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="pic/Logo.png" />
+    <meta name="author" content="Martin Bachmeier" />
+    <meta name="description" content="Martin Bachmeier" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="pic/Logo.png" alt="Profilbild" />
+        <span>Martin Bachmeier</span>
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <nav id="nav-links">
+        <a href="home.html" onclick="closeMenu()">HOME</a>
+        <a href="about-me.html" onclick="closeMenu(); return true;">ABOUT ME</a>
+        <a href="contact.html" onclick="closeMenu()">CONTACT</a>
+        <div class="close" onclick="closeMenu()">&times;</div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h2>Meine Arbeiten</h2>
+        <p>
+          Ideen gestalten. Technik einsetzen. Wirkung erzeugen.<br />
+          Meine Arbeiten verbinden Kreativität mit Konzept<br />
+          – von Webdesign bis Print, von Content bis KI.
+        </p>
+      </section>
+
+      <section class="cards cards-top">
+        <div class="card-row row-3">
+          <div class="card">
+            <img src="pic/Projekte/1. Projektseite/GPTP.png" alt="Vorschau-GPTP" />
+            <h3>CupCrafters</h3>
+            <p>
+              Fiktives Brandingprojekt mit Corporate Design, Printmedien und moderner Webgestaltung
+            </p>
+            <a href="#">mehr</a>
+          </div>
+          <div class="card">
+            <img src="pic/Projekte/1. Projektseite/Halloween.png" alt="Vorschau-Halloween" />
+            <h3>Halloween</h3>
+            <p>
+              Eigenständiges Webprojekt von Idee über Gestaltung bis hin zur fertigen Website im
+              Halloween-Stil
+            </p>
+            <a href="#">mehr</a>
+          </div>
+          <div class="card">
+            <img src="pic/Projekte/1. Projektseite/Magazin.png" alt="Vorschau-Magazin" />
+            <h3>Magazin</h3>
+            <p>Ein komplettes Magazinlayout, vom Konzept bis zum Design selbstständig umgesetzt</p>
+            <a href="#">mehr</a>
+          </div>
+        </div>
+
+        <div class="card-row row-2">
+          <div class="card">
+            <img src="pic/Projekte/1. Projektseite/Twitch.png" alt="Vorschau-Twitch" />
+            <h3>Twitch–Branding</h3>
+            <p>Von Idee bis Design: Ein selbstentwickelter Markenauftritt für Twitch</p>
+            <a href="#">mehr</a>
+          </div>
+          <div class="card">
+            <img src="pic/Projekte/1. Projektseite/Portfolio.png" alt="Vorschau-Portfolio" />
+            <h3>Portfolio</h3>
+            <p>Webdesign in eigener Sache – ein Portfolio, das zeigt, wie ich arbeite und denke</p>
+            <a href="#">mehr</a>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="cards cards-bottom">
+        <div class="card-row row-2">
+          <div class="card">
+            <img src="screenshot.jpg" alt="" />
+            <h3>KI & Experimente</h3>
+            <p>
+              Erste Designideen mit KI-Tools: Bildgenerierung, Prototyping und textbasierte Konzepte
+            </p>
+            <a href="#">mehr</a>
+          </div>
+          <div class="card">
+            <img src="screenshot.jpg" alt="" />
+            <h3>Social Media/ Content</h3>
+            <p>
+              Gestaltung von digitalen Inhalten für Social Media – grafisch klar und zielgerichtet
+              umgesetzt
+            </p>
+            <a href="#">mehr</a>
+          </div>
+        </div>
+        <div class="card-row row-2">
+          <div class="card">
+            <img src="screenshot.jpg" alt="" />
+            <h3>Videografie</h3>
+            <p>
+              Eigenständiges Videoprojekt mit Konzept, Schnitt und finalem Look – alles aus einer
+              Hand
+            </p>
+            <a href="#">mehr</a>
+          </div>
+          <div class="card">
+            <img src="screenshot.jpg" alt="" />
+            <h3>Fotografie</h3>
+            <p>
+              Vom Shooting bis zur Retusche – eigene Fotos professionell bis zum finalen Bild
+              bearbeitet
+            </p>
+            <a href="#">mehr</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="social-footer">
+      <a href="https://www.instagram.com/da_bachei/">INSTAGRAM</a>
+      <a href="https://www.facebook.com/martin.bachmeier/">FACEBOOK</a>
+      <a href="https://www.youtube.com/@martinbachmeier1943">YOUTUBE</a>
+      <a href="https://www.linkedin.com/in/martin-bachmeier-5ba153165/">LINKEDIN</a>
+      <a href="https://www.behance.net/martinbachmeier">BEHANCE</a>
+      <a href="https://www.twitch.tv/da_bachei">TWITCH</a>
+    </footer>
+
+    <!-- JS für Menü -->
+    <script>
+      function toggleMenu() {
+        document.getElementById('nav-links').classList.toggle('active');
+      }
+      function closeMenu() {
+        document.getElementById('nav-links').classList.remove('active');
+      }
+    </script>
+  </body>
+</html>

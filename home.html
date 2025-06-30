@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style-home.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="pic/Logo.png" />
+    <meta name="author" content="Martin Bachmeier" />
+    <meta name="description" content="Martin Bachmeier" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="pic/Logo.png" alt="Logo" />
+        <span>Martin Bachmeier</span>
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <nav id="nav-links">
+        <a href="about-me.html" onclick="closeMenu(); return true;">ABOUT ME</a>
+        <a href="projekte.html" onclick="closeMenu()">PROJEKTE</a>
+        <a href="contact.html" onclick="closeMenu()">CONTACT</a>
+        <div class="close" onclick="closeMenu()">&times;</div>
+      </nav>
+    </header>
+    <
+
+    <section class="hero">
+      <div class="slide slide1">
+        <div class="hero-content">
+          <p>Servus, mein Name ist Martin,</p>
+          <h2>Bringing ideas to life.</h2>
+          <p>Einzigartiges aus dem Chiemgau!</p>
+        </div>
+      </div>
+
+      <div class="slide slide2">
+        <div class="hero-content">
+          <p>Servus, mein Name ist Martin,</p>
+          <h2>Crafting meaningful solutions.</h2>
+          <p>Einzigartiges aus dem Chiemgau!</p>
+        </div>
+      </div>
+
+      <div class="slide slide3">
+        <div class="hero-content">
+          <p>Servus, mein Name ist Martin,</p>
+          <h2>Turning imagination into reality.</h2>
+          <p>Einzigartiges aus dem Chiemgau!</p>
+        </div>
+      </div>
+
+      <footer class="social-footer">
+        <a href="https://www.instagram.com/da_bachei/">INSTAGRAM</a>
+        <a href="https://www.facebook.com/martin.bachmeier/">FACEBOOK</a>
+        <a href="https://www.youtube.com/@martinbachmeier1943">YOUTUBE</a>
+        <a href="https://www.linkedin.com/in/martin-bachmeier-5ba153165/">LINKEDIN</a>
+        <a href="https://www.behance.net/martinbachmeier">BEHANCE</a>
+        <a href="https://www.twitch.tv/da_bachei">TWITCH</a>
+      </footer>
+    </section>
+
+    <!-- JS für Menü -->
+    <script>
+      function toggleMenu() {
+        document.getElementById('nav-links').classList.toggle('active');
+      }
+      function closeMenu() {
+        document.getElementById('nav-links').classList.remove('active');
+      }
+    </script>
+  </body>
+</html>

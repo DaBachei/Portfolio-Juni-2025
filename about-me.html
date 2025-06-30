@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>About me</title>
+    <link rel="stylesheet" href="style-about-me.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="pic/Logo.png" />
+    <meta name="author" content="Martin Bachmeier" />
+    <meta name="description" content="Martin Bachmeier" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="pic/Logo.png" alt="Logo" />
+        <span>Martin Bachmeier</span>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav id="nav-links">
+        <a href="home.html" onclick="closeMenu()">HOME</a>
+        <a href="projekte.html" onclick="closeMenu()">PROJEKTE</a>
+        <a href="contact.html" onclick="closeMenu()">CONTACT</a>
+        <div class="close" onclick="closeMenu()">&times;</div>
+      </nav>
+    </header>
+
+    <main class="main-wrapper">
+      <section class="about-section">
+        <div class="text">
+          <h2>About <span class="highlight">me</span></h2>
+          <p class="subtitle">Umschulung Mediengestalter</p>
+          <p>
+            Ein kreativer Allrounder mit einer Vorliebe für Design und Technologie. Mein Ziel?
+            Projekte zu gestalten, die nicht nur gut aussehen, sondern auch echten Mehrwert
+            schaffen!
+          </p>
+          <br />
+          <p>
+            Ich bin Martin – (Umschulung) Mediengestalter mit Leidenschaft für moderne Gestaltung,
+            klare Kommunikation und kreative Ideen. Egal ob Webdesign, Print, Content Creation oder
+            Motion Graphics: Ich liebe es, Dinge zu gestalten, die wirken.
+          </p>
+          <br />
+          <p>
+            Dabei arbeite ich konzeptbasiert, effizient und immer mit Blick fürs Detail – gerne auch
+            mit KI-Tools oder neuen technischen Lösungen.
+          </p>
+          <br />
+          <p>
+            Wenn du jemanden suchst, der kreative Power mit technischem Verständnis verbindet, dann:
+            Let's talk!
+          </p>
+        </div>
+        <div class="image">
+          <img src="pic/ich/Ich-Hoch_2.png" alt="Martin Bachmeier" />
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="skills-section">
+        <h3>Skills</h3>
+        <p>
+          Ich liebe es, kreative Projekte mit digitalen Tools und smarter Technik umzusetzen. Im
+          Alltag arbeite ich z.B. mit Programmen wie:
+        </p>
+        <div class="skills">
+          <div class="s1">
+            <span>Photoshop</span>
+            <span>Lightroom</span>
+            <span>InDesign</span>
+            <span>Illustrator</span>
+            <span>Premiere Pro</span>
+            <span>Acrobat</span>
+          </div>
+          <div class="s2">
+            <span>Final Cut Pro X</span>
+            <span>Motion</span>
+            <span>Figma</span>
+            <span>Canva</span>
+            <span>ChatGPT</span>
+            <span>Visual Studio Code</span>
+          </div>
+          <div class="s3">
+            <span>Affinity Photo 2</span>
+            <span>Affinity Publisher 2</span>
+            <span>Affinity Designer 2</span>
+            <span>Luminar Neo</span>
+          </div>
+        </div>
+        <p>
+          Dabei bin ich flexibel in Print, Web, Video & Social Media unterwegs – und immer offen für
+          neue Tools oder Workflows.
+        </p>
+      </section>
+    </main>
+
+    <footer class="social-footer">
+      <a href="https://www.instagram.com/da_bachei/">INSTAGRAM</a>
+      <a href="https://www.facebook.com/martin.bachmeier/">FACEBOOK</a>
+      <a href="https://www.youtube.com/@martinbachmeier1943">YOUTUBE</a>
+      <a href="https://www.linkedin.com/in/martin-bachmeier-5ba153165/">LINKEDIN</a>
+      <a href="https://www.behance.net/martinbachmeier">BEHANCE</a>
+      <a href="https://www.twitch.tv/da_bachei">TWITCH</a>
+    </footer>
+
+    <!-- JS für Menü -->
+    <script>
+      function toggleMenu() {
+        document.getElementById('nav-links').classList.toggle('active');
+      }
+      function closeMenu() {
+        document.getElementById('nav-links').classList.remove('active');
+      }
+    </script>
+  </body>
+</html>
