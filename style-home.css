@@ -91,7 +91,7 @@ nav .close {
   height: 100vh;
   overflow: clip;
   padding-top: 80px;
-  padding-bottom: 60px;
+
 }
 
 .slide {
@@ -109,6 +109,7 @@ nav .close {
   opacity: 0;
   animation: fadeSlide 15s linear infinite;
   pointer-events: none;
+  z-index: 0;
 }
 
 .slide1 {
@@ -143,6 +144,7 @@ nav .close {
 }
 
 .hero-content {
+  position: relative;
   width: 40%;
   text-align: right;
   font-size: 20px;
@@ -167,12 +169,12 @@ nav .close {
 /* ------------------FOOTER------------------ */
 .social-footer {
   position: absolute;
-  bottom: 20px !important;
+  bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
   font-family: Bold;
   font-size: 0.8rem;
-  z-index: 20;
+  z-index: 3;
   text-align: center;
 }
 
